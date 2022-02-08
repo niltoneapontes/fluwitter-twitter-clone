@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluwitter/widgets/app_bar.dart';
+import 'package:fluwitter/widgets/floating_button.dart';
+import 'package:fluwitter/widgets/tweet.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -6,10 +9,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
+      backgroundColor: const Color(0xFF15202B),
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            Tweet(),
+            Tweet(),
+            Tweet(),
+            Tweet(),
+            Tweet(),
+            Tweet(),
+            Tweet(),
+          ],
+        ),
       ),
-      body: Container(),
+      floatingActionButton: TwitterFloatingButton(),
     );
   }
 }
