@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluwitter/modules/timeline_bottom_sheet/timeline_bottom_sheet.dart';
 import 'package:fluwitter/routes/tab_pages.dart';
 import 'package:fluwitter/widgets/app_bar.dart';
 import 'package:fluwitter/widgets/floating_button.dart';
@@ -24,6 +25,7 @@ class _TabNavigationPageState extends State<TabNavigationPage> {
               context: context,
               backgroundColor: const Color(0xFF15202B),
               elevation: 8,
+              enableDrag: true,
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(10),
@@ -32,20 +34,7 @@ class _TabNavigationPageState extends State<TabNavigationPage> {
               ),
               isDismissible: true,
               builder: (context) {
-                return Container(
-                  padding: const EdgeInsets.all(10),
-                  child: Column(
-                    children: [
-                      Container(
-                        height: 5,
-                        width: 40,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10)),
-                      )
-                    ],
-                  ),
-                );
+                return const TimelineBottomSheet();
               });
         },
       ),

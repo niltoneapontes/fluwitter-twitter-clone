@@ -11,6 +11,7 @@ class TwitterAppBar extends AppBar {
               'assets/icons/twitter.svg',
               width: 32,
             ),
+            
             elevation: 0,
             shape: const Border(
               bottom: BorderSide(
