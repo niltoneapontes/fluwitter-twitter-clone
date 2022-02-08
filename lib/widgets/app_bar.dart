@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class TwitterAppBar extends AppBar {
-  TwitterAppBar({Key? key, onPressed})
+  TwitterAppBar(
+      {Key? key,
+      required void Function() onPressed,
+      required GlobalKey<ScaffoldState> globalKey})
       : super(
             key: key,
-            leading:
-                IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
+            leading: IconButton(
+                onPressed: () => globalKey.currentState?.openDrawer(),
+                icon: const Icon(Icons.person)),
             title: SvgPicture.asset(
               'assets/icons/twitter.svg',
               width: 32,
             ),
-            
             elevation: 0,
             shape: const Border(
               bottom: BorderSide(

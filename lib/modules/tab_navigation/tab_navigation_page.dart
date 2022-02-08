@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluwitter/modules/timeline_bottom_sheet/timeline_bottom_sheet.dart';
 import 'package:fluwitter/routes/tab_pages.dart';
 import 'package:fluwitter/widgets/app_bar.dart';
+import 'package:fluwitter/widgets/drawer.dart';
 import 'package:fluwitter/widgets/floating_button.dart';
 
 class TabNavigationPage extends StatefulWidget {
@@ -14,12 +15,16 @@ class TabNavigationPage extends StatefulWidget {
 class _TabNavigationPageState extends State<TabNavigationPage> {
   int _pageIndex = 0;
   final PageController _pageController = PageController();
+  GlobalKey<ScaffoldState> _key = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _key,
       backgroundColor: const Color(0xFF15202B),
+      drawer: const TwitterDrawer(),
       appBar: TwitterAppBar(
+        globalKey: _key,
         onPressed: () {
           showModalBottomSheet(
               context: context,

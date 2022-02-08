@@ -58,7 +58,8 @@ class Tweet extends StatelessWidget {
                     children: [
                       TextButton(
                         style: TextButton.styleFrom(
-                            padding: const EdgeInsets.all(0)),
+                            padding: const EdgeInsets.all(0),
+                            alignment: Alignment.centerLeft),
                         onPressed: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -70,7 +71,8 @@ class Tweet extends StatelessWidget {
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                            padding: const EdgeInsets.all(0)),
+                            padding: const EdgeInsets.all(0),
+                            alignment: Alignment.centerLeft),
                         onPressed: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -86,7 +88,8 @@ class Tweet extends StatelessWidget {
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                            padding: const EdgeInsets.all(0)),
+                            padding: const EdgeInsets.all(0),
+                            alignment: Alignment.centerLeft),
                         onPressed: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -102,8 +105,8 @@ class Tweet extends StatelessWidget {
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                          padding: const EdgeInsets.all(0),
-                        ),
+                            padding: const EdgeInsets.all(0),
+                            alignment: Alignment.centerLeft),
                         onPressed: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
