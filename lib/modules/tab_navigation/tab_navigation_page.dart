@@ -87,7 +87,9 @@ class _TabNavigationPageState extends State<TabNavigationPage> {
                   label: 'Direct Messages'),
             ]),
       ),
-      floatingActionButton: TwitterFloatingButton(),
+      floatingActionButton: TwitterFloatingButton(
+        context: context,
+      ),
     );
   }
 }

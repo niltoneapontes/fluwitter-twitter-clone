@@ -23,7 +23,9 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: TwitterFloatingButton(),
+      floatingActionButton: TwitterFloatingButton(
+        context: context,
+      ),
     );
   }
 }

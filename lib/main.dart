@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluwitter/modules/home/home_page.dart';
 import 'package:fluwitter/modules/search/search_page.dart';
 import 'package:fluwitter/modules/tab_navigation/tab_navigation_page.dart';
 import 'package:fluwitter/routes/routes.dart';
